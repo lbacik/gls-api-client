@@ -1,11 +1,11 @@
 {
-  "name": "@lbacik/gls-api-client",
-  "version": "0.0.1",
+  "name": "@lbacik/gls-db-api-client",
+  "version": "0.0.5",
   "author": "Łukasz Bacik <mail@luka.sh> (http://luka.sh)",
   "license": "LGPL-2.1-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lbacik/gls-api-client.git"
+    "url": "https://github.com/lbacik/gls-db-api-client.git"
   },
 
   "main": "src/api/client.js",
