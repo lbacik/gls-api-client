@@ -1,0 +1,26 @@
+{
+  "name": "@lbacik/gls-api-client",
+  "version": "0.0.1",
+  "author": "Łukasz Bacik <mail@luka.sh> (http://luka.sh)",
+  "license": "LGPL-2.1-or-later",
+  "main": "src/api/client.js",
+  "dependencies": {
+    "node-rest-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "files": [
+    "/src",
+    "/dist",
+    "LICENSE",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/webpack"
+  }
+}
