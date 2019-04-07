@@ -29,8 +29,22 @@ class GlsApiClient
     })
   }
 
-  add(password, key, data) {
-
+  add(email, password, key, data) {
+    return new Promise((resolve, reject) => {
+      const args = {
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        data: {
+          email: email,
+          password: password,
+          name: key,
+          data: data
+        }
+      }
+      const req = this.client.post(this.url + '/add', args, (data) => {
+        resolve(data)
+      })
+      req.on('error', err => reject(err))
+    })
   }
 
   static create(url) {
